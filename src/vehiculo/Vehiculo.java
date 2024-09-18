@@ -15,28 +15,48 @@ public class Vehiculo {
     private int capacidad;
     private int añoFabrica;
     private boolean encendido;
-    
+    //constructor = añadir datos
     //constructor = inicializar variables
-    public Vehiculo(){
-       this .hp = "100";
-       this .ruedas = 2;
-       this .modelo = "Huracan";
-       this .color = "Rojo";
-       this .marca = "Honda";
-       this .añoFabrica = 2024;
+    public Vehiculo(String caballoFuerza,int ruedas, String modelo, String marca, int capacidad, String color,int añoFabrica )
+   {
+       this .hp = caballoFuerza;
+       this .ruedas = ruedas;
+       this .modelo = modelo;  //que diga
+       this .color = color;
+       this .marca = marca;
+       this .añoFabrica = añoFabrica;
+       this .capacidad = capacidad;
 
 
     }
             
     public void transportar(){
-        System.out.println("El vehículo esta en transporte");
+        System.out.println("El vehiculo esta en transporte");
 
     }
 
     public void encender(){
-        System.out.println("El vehículo esta en encendido");
+        System.out.println("El vehiculo esta en encendido");
         this.encendido = true;
     }
+//concatenar - mostrar informacion de la clase   y sus ATRIBUTOS
+    public void Informacion() {
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Color: " + color);
+        System.out.println("Marca: " + marca);
+        System.out.println("añoFabrica: " + añoFabrica);
+        System.out.println("Caballos de Fuerza: " + hp);
+        System.out.println("Ruedas: " + ruedas);
+        System.out.println("Capacidad: " + capacidad);
+
+    }
+    
+    
 }  
+
+
+
+
+
 
 
