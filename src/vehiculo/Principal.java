@@ -3,11 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package vehiculo;
-
-/**
- *
- * @author Alumno-PB203
- */
+//autor:Yadira Yahaira Huaman Meza
 public class Principal {
     public static void main(String[] args) {
     //instanciar = invocar = llamar a un objeto
